@@ -5,23 +5,26 @@ Welcome to victoriataylor.xyz, my personal website powered by Node.js. This proj
 ## Features and Technologies Used
 
 - **Node.js**: The website is built using Node.js, a powerful JavaScript runtime environment.
-- **Bootstrap**: I have utilized Bootstrap for both JavaScript and CSS, enabling me to create a responsive and visually appealing website.
+- **Bulma**: I have utilized Bulma for CSS, enabling me to create a responsive and visually appealing website.
 
 ## Project Goals
 
-The primary goal of victoriataylor.xyz is to establish my online website that will contain blog posts, and my portfolio. By utilizing Node.js and Bootstrap, I aim to create an engaging and user-friendly website that highlights my skills, projects, and achievements.
+The primary goal of victoriataylor.xyz is to establish my online website that will contain blog posts, and my portfolio. By utilizing Node.js and Bulma, I aim to create an engaging and user-friendly website that highlights my skills, projects, and achievements.
 
 ## Project Structure
 
 Here's the structure of the project:
 ```
 ├── app.js                      # The main Node.js application file
-├── static
-│   ├── css                     # Directory for CSS files
-│   ├── js                      # Directory for JavaScript files
-│   └── images                  # Directory for image assets
 └── templates
-    └── under-construction.html  # Under Construction HTML template file
+    └── html  # Directory for HTML files
+    │    └── under-construction.html  # Under Construction HTML template file
+    ├── js                      # Directory for JavaScript files
+    ├── css                     # Directory for CSS files
+    └── images                  # Directory for image assets
+
+
+
 ```
 
 
