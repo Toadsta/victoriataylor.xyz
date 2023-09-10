@@ -39,4 +39,6 @@ To run this website locally, follow these steps:
 ```node app.js```
 4. Open your web browser and visit http://localhost:3000 or visit https://victoriataylor.xyz to visit my website!
 
+## Credits
 
+All the code in this repo is my own unless stated otherwise, however the general design of the website I have replicated from George Wood https://gwood.dev
