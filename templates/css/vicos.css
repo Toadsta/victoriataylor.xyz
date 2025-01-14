@@ -1,0 +1,18 @@
+/* Button Style */
+#playPauseButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+/* Image inside button */
+#playPauseButton img {
+    width: 50px;  /* Adjust size as needed */
+    height: auto;
+}

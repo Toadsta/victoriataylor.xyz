@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VicOS - vtaylor.dev</title>
+    <link rel="stylesheet" href="css/vicos.css">
+    <style>
+        body {
+            background-color: #3457a3;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Button to toggle audio play/pause -->
+<button id="playPauseButton">
+    <img src="images/audioOn.png" alt="Play/Pause">
+</button>
+
+<!-- Audio Element -->
+<audio id="audio" src="audio/luma.mp3" autoplay loop></audio>
+
+<script>
+    // Get the audio and button elements
+    const audio = document.getElementById('audio');
+    const playPauseButton = document.getElementById('playPauseButton');
+
+    // Set audio volume
+    audio.volume = 0.3;
+
+    // Function to toggle audio play/pause
+    function toggleAudio() {
+        if (audio.paused) {
+            audio.play();
+            playPauseButton.querySelector('img').src = 'images/audioOn.png';  // Change image to "pause"
+        } else {
+            audio.pause();
+            playPauseButton.querySelector('img').src = 'images/audioOff.png';  // Change image to "play"
+        }
+    }
+
+    // Add an event listener to the button to toggle play/pause
+    playPauseButton.addEventListener('click', toggleAudio);
+
+    // Start playing the audio automatically when the page loads
+    window.onload = function() {
+        audio.play().catch((error) => {
+            console.log("Autoplay failed: ", error);
+            // Handle case where autoplay might be blocked
+        });
+    };
+</script>
+
+</body>
+</html>

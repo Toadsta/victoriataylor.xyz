@@ -15,14 +15,14 @@ The primary goal of victoriataylor.xyz is to establish my online website that wi
 
 Here's the structure of the project:
 ```
-├── app.js                      # The main Node.js application file
+├── app.js                      
 └── templates
-    └── html  # Directory for HTML files
-    │    └── under-construction.html  # Under Construction HTML template file
-    ├── js                      # Directory for JavaScript files
-    ├── css                     # Directory for CSS files
-    └── images                  # Directory for image assets
-
+    ├── home.html               
+    ├── js                      
+    ├── css                     
+    └── static                  
+        ├── images              
+        └── audio   
 
 
 ```
