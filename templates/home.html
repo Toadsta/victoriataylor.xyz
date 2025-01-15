@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>VicOS - vtaylor.dev</title>
     <link rel="stylesheet" href="css/vicos.css">
+    <link rel="stylesheet" href="css/snow.css">
     <style>
         body {
             background-color: #343fa3;
@@ -15,23 +16,29 @@
             align-items: flex-start;  /* Align elements to the top */
             flex-direction: column;
             position: relative;  /* Make body the reference for absolute positioning */
+            cursor: url('images/arrow.cur'), auto;
         }
     </style>
 </head>
+
 <body>
+
+<img id="logoImage" src="images/3.1.png" alt="Windows 3.1 Logo">
+
+<div class="snowflakes"></div>
 
 <!-- Button to toggle audio play/pause -->
 <button id="playPauseButton"   >
     <img src="images/audioOff.png" alt="Play/Pause">
 </button>
 
-<img id="logoImage" src="images/3.1.png" alt="Windows 3.1 Logo">
 
 <!-- Audio Element -->
 <audio id="audio" src="audio/luma 8 bit.mp3" loop></audio>
 
-<!-- JS Element -->
+<!-- JS Elements -->
 <script src="javascript/audioControl.js"></script>
+<script src="javascript/snow.js"></script>
 
 </body>
 </html>
