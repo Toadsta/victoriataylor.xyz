@@ -9,10 +9,10 @@ audio.volume = 0.2;
 function toggleAudio() {
     if (audio.paused) {
         audio.play();
-        playPauseButton.querySelector('img').src = 'images/audioOn.png';  // Change image to "pause"
+        playPauseButton.querySelector('img').src = 'static/images/audioOn.png';  // Change image to "pause"
     } else {
         audio.pause();
-        playPauseButton.querySelector('img').src = 'images/audioOff.png';  // Change image to "play"
+        playPauseButton.querySelector('img').src = 'static/images/audioOff.png';  // Change image to "play"
     }
 }
 

@@ -8,7 +8,7 @@ body {
     align-items: flex-start;  /* Align elements to the top */
     flex-direction: column;
     position: relative;  /* Make body the reference for absolute positioning */
-    cursor: url('templates/images/arrow.cur'), auto;
+    cursor: url('../static/images/arrow.cur'), auto;
 }
 
 /* Center the image without resizing */
