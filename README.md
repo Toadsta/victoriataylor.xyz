@@ -1,6 +1,6 @@
-# victoriataylor.xyz
+# vtaylor.dev
 
-Welcome to victoriataylor.xyz, my personal website powered by Node.js. 
+Welcome to vtaylor.dev, my personal website powered by Node.js. 
 ## Features and Technologies Used
 
 - HTML, CSS, JS for the website design and frontend code
@@ -8,7 +8,7 @@ Welcome to victoriataylor.xyz, my personal website powered by Node.js.
 
 ## Project Goals
 
-The primary goal of victoriataylor.xyz is to establish my online website that style is mimicking windows 3.1 and will contain blog posts, and my portfolio.
+The primary goal of vtaylor.dev is to establish my online website that style is mimicking windows 3.1 and will contain blog posts, and my portfolio.
 
 ## Project Structure
 
@@ -36,7 +36,7 @@ To run this website locally, follow these steps:
 ```npm install```
 3. Start the Node.js server by running the following command:
 ```node app.js```
-4. Open your web browser and visit http://localhost:3000 or visit https://victoriataylor.xyz to visit my website!
+4. Open your web browser and visit http://localhost:3000 or visit https://vtaylor.dev to visit my website!
 
 ## Credits
 
