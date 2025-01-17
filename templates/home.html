@@ -5,40 +5,37 @@
     <title>VicOS - vtaylor.dev</title>
     <link rel="stylesheet" href="css/vicos.css">
     <link rel="stylesheet" href="css/snow.css">
-    <style>
-        body {
-            background-color: #343fa3;
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;  /* Centers horizontally */
-            align-items: flex-start;  /* Align elements to the top */
-            flex-direction: column;
-            position: relative;  /* Make body the reference for absolute positioning */
-            cursor: url('images/arrow.cur'), auto;
-        }
-    </style>
 </head>
 
 <body>
+    <img id="logoImage" src="images/3.1.png" alt="Windows 3.1 Logo">
 
-<img id="logoImage" src="images/3.1.png" alt="Windows 3.1 Logo">
+    <div class="snowflakes"></div>
 
-<div class="snowflakes"></div>
-
-<!-- Button to toggle audio play/pause -->
-<button id="playPauseButton"   >
-    <img src="images/audioOff.png" alt="Play/Pause">
-</button>
+    <button id="toggleButton">↓</button>
 
 
-<!-- Audio Element -->
-<audio id="audio" src="audio/luma 8 bit.mp3" loop></audio>
+<!--    TODO: Fix the audio toggle as it doesnt hide with the task bar-->
+    <button id="applicationsButton" >
+        <img src="images/applications.png" alt="Applications" >
+        applications
+    </button>
 
-<!-- JS Elements -->
-<script src="javascript/audioControl.js"></script>
-<script src="javascript/snow.js"></script>
+    <div class="bottom-bar">
+        <button id="playPauseButton">
+            <img src="images/audioOff.png" alt="Play/Pause">
+        </button>
+    </div>
+
+
+
+    <!-- Audio Element -->
+    <audio id="audio" src="audio/luma 8 bit.mp3" loop></audio>
+
+    <!-- JS Elements -->
+    <script src="javascript/audioControl.js"></script>
+    <script src="javascript/taskBarHide.js"></script>
+    <script src="javascript/snow.js"></script>
 
 </body>
 </html>

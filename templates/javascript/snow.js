@@ -1,8 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
     const snowflakesContainer = document.querySelector('.snowflakes');
-    const maxSnowflakes = 300;  // Maximum number of snowflakes in the DOM at once
 
-    // Function to create and animate a single snowflake
+    // vars
+    const maxSnowflakes = 100;
+
+    const minSnowSize = 2;
+    const maxSnowSize = 4;
+
+    const minAniDur = 10;
+    const maxAniDur = 15;
+
+
+    function getRandomNumber(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
     function createSnowflake() {
         if (snowflakesContainer.children.length >= maxSnowflakes) {
             snowflakesContainer.removeChild(snowflakesContainer.firstChild);
@@ -13,21 +25,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Randomise snowflake's horizontal position, animation duration, and size
         const xPosition = Math.random() * window.innerWidth;
-        const animationDuration = Math.random() * 3 + 5;
-        const snowflakeSize = Math.random() * 3 + 3;
+        const animationDuration = getRandomNumber(minAniDur, maxAniDur);
+        const snowflakeSize = getRandomNumber(minSnowSize, maxSnowSize);
 
-        // Set the initial position just above the viewport (had to do this due to snow generating in frame)
         const startPosition = Math.random() * 100;
         snowflake.style.left = `${xPosition}px`;
         snowflake.style.top = `-${startPosition}px`;
 
-        // Set the random size for the snowflake
         snowflake.style.width = `${snowflakeSize}px`;
         snowflake.style.height = `${snowflakeSize}px`;
 
         // Apply animation properties
         snowflake.style.animationDuration = `${animationDuration}s`;
-        snowflake.style.animationTimingFunction = 'linear';
+        snowflake.style.animationTimingFunction = 'ease-in';
         snowflake.style.animationIterationCount = 'infinite'; // Ensure it repeats infinitely
 
         // Append snowflake to the container
@@ -39,5 +49,5 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    setInterval(createSnowflake, 100);
+    setInterval(createSnowflake, 700);
 });
