@@ -2,28 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>VicOS - vtaylor.dev</title>
+    <title>Vic OS X - vtaylor.dev</title>
+    <link rel="shortcut icon" href="static/images/OSX10Favi.ico">
     <link rel="stylesheet" href="css/vicos.css">
     <link rel="stylesheet" href="css/snow.css">
 </head>
 
 <body>
-    <img id="logoImage" src="static/images/3.1.png" alt="Windows 3.1 Logo">
 
     <div class="snowflakes"></div>
 
-    <button id="toggleButton">↓</button>
+    <div id="logoBox" class="horizontalLines center">
+        <img id="logoImage" src="static/images/VicOSX.png" alt="Vic OS logo">
+    </div>
 
-
-<!--    TODO: Fix the audio toggle as it doesnt hide with the task bar-->
-    <button id="applicationsButton" >
-        <img src="static/images/applications.png" alt="Applications" >
-        applications
-    </button>
-
-    <div class="bottom-bar">
+    <div id="menu-bar" class="horizontalLines">
         <button id="playPauseButton">
             <img src="static/images/audioOff.png" alt="Play/Pause">
+        </button>
+    </div>
+
+    <div id="dock" class="horizontalLines" >
+        <button id="finderButton" >
+            <img src="static/images/icons/finder.png" alt="Finder icon" >  <!-- Need to find higher quality icon -->
         </button>
     </div>
 
@@ -34,7 +35,6 @@
 
     <!-- JS Elements -->
     <script src="javascript/audioControl.js"></script>
-    <script src="javascript/taskBarHide.js"></script>
     <script src="javascript/snow.js"></script>
 
 </body>

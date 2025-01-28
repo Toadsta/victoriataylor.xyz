@@ -1,102 +1,114 @@
+/* Body Styles */
 body {
-    background-color: #343fa3;
+    background-color: #8a90ea;
     margin: 0;
     padding: 0;
     height: 100vh;
     display: flex;
-    justify-content: center;  /* Centers horizontally */
-    align-items: flex-start;  /* Align elements to the top */
     flex-direction: column;
-    position: relative;  /* Make body the reference for absolute positioning */
-    cursor: url('../static/images/arrow.cur'), auto;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    cursor: url('../static/images/cursors/arrow.cur'), auto;
+
 }
 
-/* Center the image without resizing */
-#logoImage {
+/* Vic OS Logo Box */
+#logoBox {
     position: fixed;
-    top: 30%;
+    top: 45%;
     left: 50%;
+    width: 55vh;
+    height: 35vh;
     transform: translate(-50%, -50%);
-    width: 200px;
-    height: auto;
-    pointer-events: none;
-    filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.25));
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-/* Music Button Style */
+/* Vic OS Logo Image */
+#logoImage {
+    position: absolute;
+    left: 50%;
+    width: 65%;
+    height: auto;
+    transform: translateX(-50%);
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.01));
+}
+
+/* Audio Play/Pause Button*/
 #playPauseButton {
     position: absolute;
-    bottom: 2px;
-    right: 2px;
+    right: 5px;
     border: none;
-    cursor: pointer;
     background-color: transparent;
-    /*color: white;*/
-    /*font-size: 10px;*/
-    /*padding: 0px;*/
-    /*filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.3));*/
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*align-items: center;*/
+    cursor: pointer;
+    /*cursor: url('../static/images/cursors/pointer.cur'), auto;  TODO:Fix custom cursors*/
 }
 
-/* Image inside button */
 #playPauseButton img {
-    width: 75%;
-    height: auto;
-    /*filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.3));*/
-    /*margin-bottom: 6px;*/
-}
-
-/* App Button Style */
-#applicationsButton {
-    position: absolute;
-    top: 75px;
-    left: 10px;
-    padding: 5px;
-    border: none;
-    cursor: pointer;
-    color: white;
-    font-size: 10px;
-    background-color: transparent;
-    filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.3));
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Image inside button */
-#applicationsButton img {
     width: 60%;
     height: auto;
-    filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.3));
-    margin-bottom: 6px;
 }
 
-#toggleButton {
-    height: 35px;
-    width: 35px;
+/* Application Button */
+#finderButton {
     position: absolute;
-    bottom: -1px; /* has to be set to -1 or it doesnt line up*/
-    left: 10px;
+    top: 50%;
+    left: 5vw;
+    transform: translate(-50%, -50%);
     border: none;
+    background-color: transparent;
     cursor: pointer;
-    background: #C5C5C5 linear-gradient(to top, #C5C5C5 98%, #ffffff 2%);
+    /*cursor: url('../static/images/cursors/pointer.cur'), auto;*/
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.3));
 }
 
-.bottom-bar {
-    height: 35px;
+#finderButton img {
+    width: 50%;
+    height: auto;
+}
+
+/* Mac OS Style Menu Bar */
+#menu-bar {
+    position: fixed;
+    top: 0;
     width: 100%;
-    background: linear-gradient(to top, #C5C5C5 98%, #ffffff 2%);
-    display: flex;
-    transition: height 0.3s ease;
+    height: 20px;
+    background-color: #f3f3f3;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 1);
 }
 
-.bottom-bar.hidden {
-    height: 0;
-    padding: 0;
-    overflow: hidden;
+/* Mac OS Style Dock */
+#dock {
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    width: 70%;
+    height: 85px;
+    background-color: rgba(243, 243, 243, 0.2); /* opacity last value */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 1);
+    transform: translateX(-50%);
 }
+
+/* Horizontal Line Styles (Simulate Mac OS Cheetah Lines) */
+.horizontalLines {
+    background: repeating-linear-gradient(
+            to bottom,
+            rgba(242, 242, 242, 0.2) 0px,
+            rgba(242, 242, 242, 0.2) 2px,
+            rgba(224, 224, 224, 0.2) 2px,
+            rgba(224, 224, 224, 0.2) 4px
+    );
+}
+
+
+
+
+
+
 
 
 

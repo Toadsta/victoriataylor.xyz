@@ -8,7 +8,7 @@ Welcome to vtaylor.dev, my personal website powered by Node.js.
 
 ## Project Goals
 
-The primary goal of vtaylor.dev is to establish my online website that style is mimicking windows 3.1 and will contain blog posts, and my portfolio.
+The primary goal of vtaylor.dev is to establish my online website that style is mimicking Mac OS X Cheetah and will contain blog posts, and my portfolio.
 
 ## Project Structure
 
@@ -40,4 +40,4 @@ To run this website locally, follow these steps:
 
 ## Credits
 
-All the code in this repo is my own unless stated otherwise, however I have taken design cues from Windows 3.1 and heavily inspired by the website https://teethy.ca
+All the code in this repo is my own unless stated otherwise, I have taken the design from Mac OS Cheetah and was inspired by the website https://teethy.ca

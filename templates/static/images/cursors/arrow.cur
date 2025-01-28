@@ -1,0 +1,15 @@
+﻿[Arrow]
+Path=Pointer.cur
+
+[Hand]
+Path=Link Select.cur
+
+[Wait]
+Path=Please wait.ani
+
+[Crosshair]
+Path=Precision select.cur
+
+[SizeAll]
+Path=Move.ani
+
